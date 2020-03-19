@@ -39,5 +39,6 @@ class String
     end
     
   end
+  total_sentences
 end
 end
