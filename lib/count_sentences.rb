@@ -24,7 +24,7 @@ class String
   end
 
   def count_sentences
-    self.split(".").count
+    total_sentences = self.split(".").count
       
     
   end
