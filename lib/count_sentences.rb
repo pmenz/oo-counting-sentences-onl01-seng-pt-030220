@@ -29,6 +29,7 @@ class String
     self.each_with_index do |index, char|
       if index == 0 
         next
+      end
       if char == "." && self[index-1] !="."
         total_sentences +=1
       elsif char == "?" && self[index-1] !="?"
