@@ -24,9 +24,10 @@ class String
   end
 
   def count_sentences
-    total_sentences = self.split(".").count
-    total_sentences += self.split("?").count
-    total_sentences += self.split("!").count
+    
+    total_sentences = self.split(".").count-1
+    total_sentences += self.split("?").count-1
+    total_sentences += self.split("!").count-1
     
     total_sentences
     
