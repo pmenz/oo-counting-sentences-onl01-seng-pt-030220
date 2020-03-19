@@ -24,8 +24,8 @@ class String
   end
 
   def count_sentences
-    if self.split.count==0 
-      0 
-    end
+    self.split(".").count
+      
+    
   end
 end
