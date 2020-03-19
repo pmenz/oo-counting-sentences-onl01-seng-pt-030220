@@ -24,12 +24,12 @@ class String
   end
 
   def count_sentences
+    total_sentences = 0
     
-    total_sentences = self.count "."
-    total_sentences += self.count "?"
-    total_sentences += self.count "!"
-    
-    total_sentences
+    self.each_with_index do |index, char|
+      if char == "." && self[index-1] !="."
+        total_sentences +=1
+    end
     
   end
 end
