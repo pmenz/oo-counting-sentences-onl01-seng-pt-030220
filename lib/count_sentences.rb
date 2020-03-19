@@ -26,7 +26,7 @@ class String
   def count_sentences
     total_sentences = 0
     
-    self.each_with_index do |index, char|
+    self.each_char.with_index do |char, index| 
       if index == 0 
         next
       end
