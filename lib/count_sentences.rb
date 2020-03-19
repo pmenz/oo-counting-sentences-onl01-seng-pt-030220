@@ -27,7 +27,12 @@ class String
     total_sentences = 0
     
     self.each_with_index do |index, char|
+      if index == 0 next
       if char == "." && self[index-1] !="."
+        total_sentences +=1
+      elsif char == "?" && self[index-1] !="?"
+        total_sentences +=1
+      elsif char == "!" && self[index-1] !="!"
         total_sentences +=1
     end
     
